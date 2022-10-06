@@ -1,0 +1,8 @@
+CREATE TABLE catagory (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+);
+
+CREATE TABLE item (
+
+);
