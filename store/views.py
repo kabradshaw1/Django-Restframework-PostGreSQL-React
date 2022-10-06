@@ -1,9 +1,9 @@
-from django.shortcuts import render, REDIRECT
+from django.shortcuts import render
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
-from .models import Feature
-# Create your views here.
+# from .models import Feature
 
 def index(request):
-  features = Feature.objects.all()
-  return render(request, 'index.html', {'features': features})
+  # features = Feature.objects.all() 
+  # {'features': features}
+  return render(request, 'index.html')
