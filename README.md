@@ -20,4 +20,10 @@ This project is entended to practice using some tools I'm only beginning to mess
 
 * You will need to install django-cors-header.  Type pip install django-cors-header into cmd
 
-* You will need to cd into the store directory. 
+## Use 
+
+* You will need to cd into the store directory in cmd.  
+
+* You can start the server by typing python manage.py runserver into the cmd.
+
+
