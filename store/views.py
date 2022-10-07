@@ -3,7 +3,7 @@ from django.contrib.auth.models import User, auth, Group
 from django.contrib import messages
 from rest_framework import viewsets, permissions, generics
 # from tutorial.quickstart.serializers import UserSerializer, GroupSerializer
-from .models import Item, Location
+from .models import Item, Location, Feature
 from .serializer import ItemSerializer, LocationSerializer
 
 # from .models import Feature
@@ -11,7 +11,7 @@ from .serializer import ItemSerializer, LocationSerializer
 def index(request):
   # features = Feature.objects.all() 
   # {'features': features}
-  return render(request, 'index.html')
+  return render(request, 'index.html',)
 
 class ItemList(generics.ListCreateAPIView):
   serializer_class = ItemSerializer

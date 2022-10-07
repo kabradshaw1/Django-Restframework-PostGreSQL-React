@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'store.apps.StoreConfig'
     'store',
     'rest_framework',
+    
 ]
 
 REST_FRAMEWORK = {
@@ -89,8 +91,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'store',
-        'USER': 'root',
-        'PASSWORD': 'PanCake!',
+        'USER': 'dbadmin',
+        'PASSWORD': '12345',
         'HOST': 'localhost',
         'PORT': '3306'
     }

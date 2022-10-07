@@ -11,7 +11,6 @@
 </head>
 <body>
   <header>
-    <h1>Hello</h1>
     {% if user.is_authenticated %}
     <h1>Welcome, {{user.username}}</h1>
     {% else %}
@@ -24,7 +23,13 @@
     {% endif %}
   </header>
   <main>
-
+    <!-- {% for feature in features %}
+    <h2>{{feature.name}}</h2>
+    <p>{{feature.details}}</p>
+    {% if feature.name == 'stuff' %}
+    <p>Added from if statement for stuff</p>
+    {% endif %}
+    {% endfor %} -->
   </main>
   <footer>
 
