@@ -9,9 +9,9 @@ from .serializer import ItemSerializer, LocationSerializer
 # from .models import Feature
 
 def index(request):
-  # features = Feature.objects.all() 
-  # {'features': features}
-  return render(request, 'index.html',)
+  features = Feature.objects.all() 
+  
+  return render(request, 'index.html',{'features': features})
 
 class ItemList(generics.ListCreateAPIView):
   serializer_class = ItemSerializer

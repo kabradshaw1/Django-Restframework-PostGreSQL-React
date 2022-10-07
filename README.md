@@ -12,3 +12,4 @@ You will need to install django.  Type pip install django into cmd
 You will need to install djangorestframework.  Type pip install djangorestframework into cmd
 You will need to install pymysql.  Type pip install pymysql into cmd
 You will need to install django-cors-header.  Type pip install django-cors-header into cmd
+You will need to cd into the stores directory

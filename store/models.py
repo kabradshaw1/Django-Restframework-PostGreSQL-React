@@ -17,3 +17,8 @@ class Item(models.Model):
 class Feature(models.Model):
   name = models.CharField(max_length=100)
   details = models.CharField(max_length=500)
+
+class store(models.Model):
+    title = models.CharField(max_length=70, blank=False, default='')
+    description = models.CharField(max_length=200,blank=False, default='')
+    published = models.BooleanField(default=False)

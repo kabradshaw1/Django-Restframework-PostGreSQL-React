@@ -23,18 +23,18 @@
     {% endif %}
   </header>
   <main>
-    <!-- {% for feature in features %}
+    {% for feature in features %}
     <h2>{{feature.name}}</h2>
     <p>{{feature.details}}</p>
     {% if feature.name == 'stuff' %}
     <p>Added from if statement for stuff</p>
     {% endif %}
-    {% endfor %} -->
+    {% endfor %}
   </main>
   <footer>
 
   </footer>
-  <script src="jquery-3.6.0.min.js"></script>
+  <!-- <script src="jquery-3.6.0.min.js"></script> -->
   <script src="{% static '/js/scripts.js' %}" type="text/javascript"></script>
 </body>
 </html>
