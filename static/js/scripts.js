@@ -1,10 +1,18 @@
 
-var getLocation = $('#item-button').submit(function(item) {
+var getLocation = $('#item-button').submit(event => {
+  event.preventDefault();
 
-  var apiUrl = "http://127.0.0.1:8000/api/item/" + item;
+  const itemName = $('[name="itemName"').value
 
   // make a get request to url
-  fetch(apiUrl)
+  fetch('api/item', {
+    method: 'GET',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(itemName)
+  })
     .then(function(response) {
       // request was successful
       if (response.ok) {
