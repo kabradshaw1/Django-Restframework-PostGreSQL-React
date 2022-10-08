@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth, Group
 from django.contrib import messages
 from rest_framework import viewsets, permissions, generics
@@ -11,7 +11,7 @@ from .serializer import ItemSerializer, LocationSerializer
 def index(request):
   features = Feature.objects.all() 
   
-  return render(request, 'index.html',{'features': features})
+  return render(request, 'index.html', {'features': features})
 
 class ItemList(generics.ListCreateAPIView):
   serializer_class = ItemSerializer
