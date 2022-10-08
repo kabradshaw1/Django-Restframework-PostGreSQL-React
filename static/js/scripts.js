@@ -1,12 +1,13 @@
+const displayItem = (data) => {
+  console.log(data)
+  const itemName = $('<p>').text(data.itemName);
+  const ItemLocation = $('<p>').text(data.itemLocation);
+  const results = $('#results');
+  results.append(itemName).append(ItemLocation);
+}
+
 const getLocation = (formData) => {
   let queryUrl = '/api/item/' + formData;
-
-  
-  // Object.entries(formData).forEach(([key, value]) => {
-  //   queryUrl += `${key}=${value}&`;
-  // });
-
-  console.log();
 
   fetch(queryUrl)
     .then(response => {
@@ -14,7 +15,7 @@ const getLocation = (formData) => {
       if (response.ok) {
         response.json().then(function(data) {
           
-          console.log(data);
+          displayItem(data);
         });
       } else {
         alert('Error: Item Not Found');
