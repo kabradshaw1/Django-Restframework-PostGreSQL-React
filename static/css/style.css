@@ -1,11 +1,23 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+};
+
+.dropdown-menu{
+  margin-top: 0;
+};
+
+h1 {
+  color: red;
+};
+
 .primary-color {
   color: rgb(31, 98, 175);
-}
+};
 
 .secondary-color {
   color:rgb(116, 123, 131);
-}
+};
 
 .tertiary-color {
   color:rgb(21, 32, 44)
-}
+};

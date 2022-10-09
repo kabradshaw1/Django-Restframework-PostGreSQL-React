@@ -7,16 +7,22 @@ $(document).ready(() => {
     getLocation(itemName)
   });
 
-  $("#citydrop").hide();
+  // $("#citydrop").hide();
 
-  $("#cityclick").mouseover(function () {
-      $("#citydrop").slideDown('slow');
+  // $("#cityclick").mouseover(function () {
+  //     $("#citydrop").slideDown('slow');
+  // });
+
+  // $("#wrapper").mouseleave(function () {
+  //     $("#citydrop").slideUp('slow');
+  // });
+
+  $(".dropdown").hover(function(){
+    var dropdownMenu = $(this).children(".dropdown-menu");
+    if(dropdownMenu.is(":visible")){
+        dropdownMenu.parent().toggleClass("open");
+    }
   });
-
-  $("#wrapper").mouseleave(function () {
-      $("#citydrop").slideUp('slow');
-  });
-
 });
 
 
