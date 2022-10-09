@@ -1,11 +1,22 @@
 $(document).ready(() => {
-  const itemSubmit = $('#item-button').submit(event => {
+
+  $('#item-button').submit(event => {
     event.preventDefault();
     
     const itemName = $('[name="itemName"]').val()
     getLocation(itemName)
-   
   });
+
+  $("#citydrop").hide();
+
+  $("#cityclick").mouseover(function () {
+      $("#citydrop").slideDown('slow');
+  });
+
+  $("#wrapper").mouseleave(function () {
+      $("#citydrop").slideUp('slow');
+  });
+
 });
 
 
