@@ -6,8 +6,6 @@ from rest_framework import viewsets, permissions, generics
 from .models import Item, Location, Feature
 from .serializer import ItemSerializer, LocationSerializer
 
-# from .models import Feature
-
 def index(request):
   features = Feature.objects.all() 
   
