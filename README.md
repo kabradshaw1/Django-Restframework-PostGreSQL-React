@@ -1,4 +1,4 @@
-# Django-Rest-MySQL-Jquery 
+# Django-Restframework-PostGreSQL-React 
 
 ## Purpose
 This project is entended to practice using some tools I'm only beginning to mess around with.  This is the first time I've worked with rest.  
