@@ -27,3 +27,24 @@ This project is entended to practice using some tools I'm only beginning to mess
 * You can start the server by typing python manage.py runserver into the cmd.
 
 
+models:
+
+item:
+-name
+-description
+-price
+-location
+-seller
+
+location:
+-id
+-address
+
+user:
+-username
+-password
+
+catogory:
+-id
+-name
+
